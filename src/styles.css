@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+body {
+  display: grid;
+  place-items: center;
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  background-color: hsl(27, 66%, 92%);
+  height: 100vh;
+}
+
+#sb__open-sandbox59 {
+  display: none !important;
+}
+
+p {
+  margin: 0;
+}
+
+.card {
+  display: grid;
+  row-gap: 20px;
+}
+
+.cardTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  padding: 30px 40px;
+  background: hsl(10, 79%, 65%);
+  color: white !important;
+}
+
+.cardTop__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 8px;
+  font-family: "DM Sans", sans-serif !important;
+}
+
+.cardTop .content__amount {
+  font-size: 27px;
+  font-weight: 700;
+  color: white;
+}
+
+.cardTop .content__balance {
+  color: rgba(255, 255, 255, 0.856);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.cardBottom {
+  display: grid;
+  border-radius: 15px;
+  padding: 35px 40px 40px 35px;
+  background-color: hsl(33, 100%, 98%);
+}
+
+.cardBottom__bars {
+  height: 200px;
+  margin: 40px 0 0 0;
+}
+
+.content__title {
+  color: hsl(25, 47%, 15%);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.bars__list {
+  list-style: none;
+  display: flex;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+  align-content: flex-start;
+  column-gap: 16px;
+}
+
+.list__item {
+  display: grid;
+  justify-items: center;
+  align-items: end;
+  grid-template-rows: 1fr auto;
+  row-gap: 5px;
+  height: 100%;
+  width: 50px;
+}
+
+.item__bar {
+  background: hsl(10, 79%, 65%);
+  border-radius: 4px;
+  width: 100%;
+  transition: all ease-in-out 1s;
+}
+
+.item__barFull {
+  background-color: hsl(186, 34%, 60%);
+  border-radius: 4px;
+  width: 100%;
+}
+
+.cardBottom__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-radius: 10px;
+}
+
+.cardBottom__line {
+  width: 100%;
+  height: 2px;
+  padding: 0;
+  margin: 30px 0;
+  background: hsl(27, 66%, 92%);
+}
+
+.content__amount {
+  font-size: 45px;
+}
+
+.content__amount,
+.content__porcent {
+  color: hsl(25, 47%, 15%);
+  font-weight: 700;
+}
+
+.content__totalMont,
+.content__totalAmount,
+.item__day {
+  font-size: 17px;
+  color: hsl(28, 10%, 53%);
+  font-weight: 500;
+}
+
+.content__rside {
+  display: grid;
+  justify-items: end;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 675px) {
+  body {
+    padding: 20px;
+  }
+}
